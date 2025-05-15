@@ -1,0 +1,15 @@
+\plottype: "connected"
+\x-lab: "X (log)"
+\y-lab: "Y (log)"
+\x-fontsize: 12
+\y-fontsize: 12
+\title: "Distribution"
+\xscale: "log"
+\yscale: "log"
+#
+1   10  2   20  3   30
+2   40  3   60  4   80
+3   100 4   120 5   140
+4   160 5   200 6   250
+5   300 6   350 7   400
+6   500 7   600 8   700
