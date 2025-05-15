@@ -34,14 +34,15 @@ The input file must be a plain text file with the following structure:
 
    ```
    #
-   0 1 1 2 2 3
-   3 4 4 5
+   0 1 0 2 
+   1 4 1 5
+   2 7 2 7
    ```
 
 This example would create two data series:
 
-* Series 1: (0,1), (1,2), (2,3)
-* Series 2: (3,4), (4,5)
+* Series 1: (0,1,2), (1,4,7)
+* Series 2: (0,1,2), (2,5,7)
 
 ---
 
