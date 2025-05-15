@@ -1,4 +1,4 @@
-# matter
+# Matter
 
 Matter is a simple command-line tool that reads structured data from a specially formatted .txt file and plots it using matplotlib.
 
@@ -45,7 +45,7 @@ This example would create two data series:
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 Make sure you have Python 3 and `matplotlib` installed.
 
