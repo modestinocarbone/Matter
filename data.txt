@@ -1,13 +1,18 @@
 \plottype: "connected"
+
 \x-lab: "Time (s)"
 \y-lab: "Speed (m/s)"
 \x-fontsize: 12
 \y-fontsize: 12
-\label1: data 1
-\label2: data 2	
-\title: "Speed data"
 \xscale: "linear"
 \yscale: "linear"
+
+\legend1: data 1
+\legend2: data 2
+\l-fontsize: 12
+
+\title: "Speed data"
+\title-fontsize: 22
 #
 1	2	1	34
 2	4	2	26

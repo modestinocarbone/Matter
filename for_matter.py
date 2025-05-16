@@ -2,7 +2,6 @@
 
 import sys
 import matplotlib.pyplot as plt
-import numpy as np
 import os
 
 if len(sys.argv) < 2:
@@ -21,6 +20,8 @@ params = {
     "y-lab": "Y",
     "x-fontsize": 12,
     "y-fontsize": 12,
+    "l-fontsize": 12,
+    "title-fontsize": 12,
     "title": "",
     "xscale": "linear",
     "yscale": "linear"
@@ -48,9 +49,9 @@ try:
                         key = key.strip()
                         if 'fontsize' in key:
                             value = int(value)
-                        if key.startswith("label"):
+                        if key.startswith("legend"):
                             try:
-                                index = int(key[5:]) - 1
+                                index = int(key[6:]) - 1
                                 labels[index] = value
                             except ValueError:
                                 continue
@@ -103,7 +104,7 @@ for i, (x, y) in enumerate(data_sets):
 # Labels and title
 plt.xlabel(params["x-lab"], fontsize=params["x-fontsize"])
 plt.ylabel(params["y-lab"], fontsize=params["y-fontsize"])
-plt.title(params["title"])
+plt.title(params["title"], fontsize=params["title-fontsize"])
 plt.grid(True)
-plt.legend()
+plt.legend(fontsize=params["l-fontsize"])
 plt.show()
